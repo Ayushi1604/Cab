@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	<div class="container center" ><br>
+	<div class="container " ><br>
 	<form:form action="registerPage" METHOD="POST" modelAttribute="loginBean" class="form-signin">
 	<form:hidden path="loginid"/>
 	  <h2 class="form-signin-heading">Create your account</h2>
@@ -33,28 +33,28 @@
 	  
 	  <spring:bind path="userName">
 	    <div class="form-group">
-	      <form:input path="userName" type="text" class="form-control" placeholder="User Name" required="required"/>
+	      <form:input path="userName" type="text" class="form-control" placeholder="abc" required="required"/>
 	      <form:errors path="userName" cssClass="text-warning"></form:errors>
 	    </div>
 	  </spring:bind>
 	  
 	  <spring:bind path="userAddress">
 	    <div class="form-group">
-	      <form:input path="userAddress" type="text" class="form-control" placeholder="User Address" required="required"/>
+	      <form:input path="userAddress" type="text" class="form-control" placeholder="abc colony" required="required"/>
 	      <form:errors path="userAddress" cssClass="text-warning"></form:errors>
 	    </div>
 	  </spring:bind>
 	  
 	  <spring:bind path="userContactNumber">
 	    <div class="form-group">
-	      <form:input path="userContactNumber" type="text" class="form-control" placeholder="Contact Number" required="required"/>
+	      <form:input path="userContactNumber" type="text" class="form-control" placeholder="1234567890" required="required"/>
 	      <form:errors path="userContactNumber" cssClass="text-warning"></form:errors>
 	    </div>
 	  </spring:bind>
 	  
 	  <spring:bind path="userType">
 	    <div class="form-group">
-	    <form:input path="userType" type="text" class="form-control" placeholder="User Type" required="required"/>
+	    <form:input path="userType" type="text" class="form-control" placeholder="abc" required="required"/>
 	    <form:errors path="userType" cssClass="text-warning"></form:errors>
 	   </div>
 	  </spring:bind> 

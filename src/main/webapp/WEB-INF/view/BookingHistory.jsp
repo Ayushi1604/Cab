@@ -5,18 +5,14 @@
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
   <title>Book Now</title>
-  <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
-	rel="stylesheet">
+    <link href="${contextPath}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
   </head>
   <body>
    <c:if test="${user == null}">
        <c:redirect url="http://localhost:8200/"></c:redirect>
    </c:if>
-   <div style="text-align:center; padding:5px;background-color: Teal;">
-   <h1 align="center">Welcome</h1>
-   <h2 align="center">All Vehicles details</h2>
-   </div>
-   <br>
+    <%@include file="navigation.jsp" %>
+      <br><br><br>
 
    <div class="container">
      <table class="table table-stripped">
@@ -37,5 +33,7 @@
      </table>
      <a class="btn btn-primary" href="/CustomerHomePage">Home</a>
    </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="${contextPath}/resources/bootstrap/js/bootstrap.min.js"></script>
    </body>
    </html>

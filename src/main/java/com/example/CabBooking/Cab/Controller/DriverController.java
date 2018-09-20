@@ -2,6 +2,8 @@ package com.example.CabBooking.Cab.Controller;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +33,17 @@ public class DriverController {
 			ModelAndView mav=new ModelAndView("AddDriver");
 			return mav;
 		}
+	@RequestMapping(value="/driverMain" ,method=RequestMethod.POST)
+	   public ModelAndView driverMain(@RequestParam Map<String ,String> map){
+		ModelAndView mav = new ModelAndView("Admin");
+          DriverBean driver = new DriverBean();
+          driver.setDriverId(map.get("driverId"));
+          driver.setVehicleNumber(map.get("vehicleNumber"));
+          driver.setDriverName(map.get("driverName"));
+          driver.setDriverContactNumber(map.get("driverContactNumber"));
+          driverService.addDriver(driver);
+		return mav;
+	}
 		
 	@RequestMapping(value="/updateDriver",method = RequestMethod.GET)
 	   public ModelAndView updateDriver(@RequestParam String id, ModelMap model) {
