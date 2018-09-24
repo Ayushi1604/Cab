@@ -1,7 +1,7 @@
 <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">BOOK CAB NOW</a>
+        <a class="navbar-brand" href="#">ADMIN PAGE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -16,8 +16,8 @@
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">Vehicles
         <span class="caret"></span></a>
 	      <ul class="dropdown-menu">
-	        <li><a  href="/AddVehicle">Add Vehicles</a></li>
-	        <li><a  href="/getAllVehicles">veiw vehicles</a></li>
+	        <li><a  href="/AddVehicle">Add Vehicle</a></li>
+	        <li><a  href="/getAllVehicles">View vehicles</a></li>
 	      </ul>
 	    </li>
         <li class="dropdown">
@@ -28,7 +28,7 @@
 	        <li><a  href="${contextRoot}/getAllDrivers">View Driver</a></li>
 	      </ul>
 	    </li>            <li class="nav-item" id="Contact">
-              <a class="nav-link" href="logout">logout</a>
+              <a class="nav-link" href="logout">Logout</a>
             </li>
           </ul>
         </div>

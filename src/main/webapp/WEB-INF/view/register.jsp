@@ -18,14 +18,14 @@
 	  <h2 class="form-signin-heading">Create your account</h2>
         <spring:bind path="email">
 	    <div class="form-group">
-	    <form:input path="email" type="email" class="form-control" placeholder="abc@gmail.com" required="required"/>
+	    <form:input path="email" type="email" class="form-control" placeholder="Email" required="required"/>
 	    <form:errors path="email" cssClass="text-warning"></form:errors>
 	    </div>
 	  </spring:bind>
 	  
 	  <spring:bind path="password">
 	   <div class="form-group">
-	      <form:password path="password" class="form-control" placeholder="password"/>
+	      <form:password path="password" class="form-control" placeholder="Password"/>
 	      <form:errors path="password" cssClass="text-warning"/>
 	    </div>
 	   </spring:bind>
@@ -33,28 +33,32 @@
 	  
 	  <spring:bind path="userName">
 	    <div class="form-group">
-	      <form:input path="userName" type="text" class="form-control" placeholder="abc" required="required"/>
+	      <form:input path="userName" type="text" class="form-control" placeholder="User Name" required="required"/>
 	      <form:errors path="userName" cssClass="text-warning"></form:errors>
 	    </div>
 	  </spring:bind>
 	  
 	  <spring:bind path="userAddress">
 	    <div class="form-group">
-	      <form:input path="userAddress" type="text" class="form-control" placeholder="abc colony" required="required"/>
+	      <form:input path="userAddress" type="text" class="form-control" placeholder="Address" required="required"/>
 	      <form:errors path="userAddress" cssClass="text-warning"></form:errors>
 	    </div>
 	  </spring:bind>
 	  
 	  <spring:bind path="userContactNumber">
 	    <div class="form-group">
-	      <form:input path="userContactNumber" type="text" class="form-control" placeholder="1234567890" required="required"/>
+	      <form:input path="userContactNumber" type="text" class="form-control" placeholder="User Contact Number" required="required"/>
 	      <form:errors path="userContactNumber" cssClass="text-warning"></form:errors>
 	    </div>
 	  </spring:bind>
 	  
 	  <spring:bind path="userType">
 	    <div class="form-group">
-	    <form:input path="userType" type="text" class="form-control" placeholder="abc" required="required"/>
+	    <form:select path="userType" class="form-control" placeholder="User Type" required="required">
+	    <option> Regular </option>
+	    <option> Prime </option>
+	    <option> Silver </option>
+	    </form:select>
 	    <form:errors path="userType" cssClass="text-warning"></form:errors>
 	   </div>
 	  </spring:bind> 

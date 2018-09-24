@@ -28,7 +28,7 @@
 	      </div>
 	    </li>            
 	    <li class="nav-item" id="Contact">
-              <a class="nav-link" href="logout">logout</a>
+              <a class="nav-link" href="logout">Logout</a>
             </li>
           </ul>
         </div>

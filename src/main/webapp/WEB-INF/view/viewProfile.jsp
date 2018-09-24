@@ -15,10 +15,7 @@
  
  
  <div class="container"><br><br>
-  <table class="table table-striped">  
-   <tr>
-     <th>Login Id</th><td>${customer.loginid}</td>
-   </tr>  
+  <table class="table table-striped">    
    
      <tr> 
        <th>Email</th><td>${customer.email}</td>

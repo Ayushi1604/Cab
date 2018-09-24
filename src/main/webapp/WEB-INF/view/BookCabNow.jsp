@@ -20,12 +20,6 @@
 <%@include file="navigation.jsp" %>
 <br><br><br>
 
-
-
-<div class="about-bottom">
-		<div class="w3l_about_bottom_right two">
-			<h2 class="tittle"><img src="/images/cab.png" alt=""></h2>
-			<div class="book-form">
 <div class="container">
 <form action="search" METHOD=POST>
 <%
@@ -57,14 +51,10 @@ ArrayList<String> destinations =  sourceDestination.get(1);
 <%	}%></select>
 </td>
 </tr>
-<tr><td>Vehicle Name</td><td><input type="text" name=vehicleName></td></tr>
-<tr><td>Vehicle Type</td><td><input type="text" name=vehicleType></td></tr>
+
 <tr><td></td><td><input type="submit" value="Search"></td></tr>
 </table>
 </form>
-</div>
-</div>
-</div>
 </div>
 
 

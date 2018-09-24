@@ -19,11 +19,11 @@
 	<form action="login" METHOD="POST" class="form-signin">
 	  <div class="form-group ${error != null ? 'has-error' : ''}">
             <span>${message}</span>
-	      <h2 class="form-heading">Log in</h2><input type="text" name="email" class="form-control" placeholder="Email"
+	      <h2 class="form-heading">Login</h2><input type="text" name="email" class="form-control" placeholder="Email"
                    autofocus="true"/>
 	      <input name="password" type="password" class="form-control" placeholder="Password"/>
             <span>${error}</span>
-	      <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
+	      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
             <h4 class="text-center"><a href="${contextPath}/register">Create an account</a></h4>
 	
 	</div>

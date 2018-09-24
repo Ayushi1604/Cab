@@ -18,17 +18,19 @@
      <table class="table table-striped">
      <thead>
         <tr>
-          <th> Name</th>
-          <th> Type </th>
+           <th>Vehicle Number</th>
+          <th> Vehicle Name</th>
+          <th> Vehicle Type </th>
           <th></th>
         </tr>
         </thead>
         <tbody>
           <c:forEach items="${vehicles}" var = "vehicle">
              <tr>
+               <td>${vehicle.vehicleNumber}</td>
                <td>${vehicle.vehicleName}</td>
                <td>${vehicle.vehicleType}</td>
-               <td> <a class="btn btn-primary" href="/confirmBooking">Available</a> </td>
+               <td> <a class="btn btn-primary" href="/confirmBooking?id=${vehicle.vehicleNumber}">Book Your Cab</a> </td>
               </tr>
           </c:forEach>
         </tbody>

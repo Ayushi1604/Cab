@@ -26,7 +26,7 @@
 	<div class="form-group"><form:input type="text" path="vehicleName" class="form-control" placeholder="Vehicle Name" /></div>
 	<div class="form-group"><form:radiobutton path="vehicleType" value="AC"/>AC
 	                       <form:radiobutton path="vehicleType" value="Non-AC"/>Non-AC</div>
-	<div class="form-group"><input type = "submit" value = "submit" class = "btn btn-primary" /></div>
+	<div class="form-group"><input type = "submit" value = "Add Vehicle" class = "btn btn-primary" /></div>
 
 	</form:form>
 	</div>
