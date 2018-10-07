@@ -6,18 +6,15 @@
   <title>Book Now</title>
   <link href="${contextPath}/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   </head>
-  <body>
+  <body >
    <c:if test="${user == null}">
        <c:redirect url="http://localhost:8200/"></c:redirect>
    </c:if>
   <%@include file="navigation.jsp" %>
    <br><br><br>
    <div class="container">
-    <table class="table table-primary">
+    <table class="table table-bordered table-dark">
      <thead>
-       <tr>
-         <th>Driver Id</th> <td>${driver.driverId}</td>
-       </tr>
        <tr>
          <th>Driver Name</th> <td>${driver.driverName}</td>
        </tr>
@@ -35,7 +32,7 @@
    
     </table>
     <br><br>
-    Thanks for booking with us. Your cab will be at your location soon. Enjoy your ride!
+    <div><h3 style="text-color:#283747">Thanks for booking with us. Your cab will be at your location soon. Enjoy your ride!</p></div>
    </div> 
    
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

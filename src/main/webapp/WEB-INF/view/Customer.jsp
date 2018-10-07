@@ -13,7 +13,7 @@
 <title>Customer home page</title>
 
 </head>
-<body>
+<body style="background-image:url('resources/Image/background.jpg');background-repeat:no-repeat;background-position:center;background-size:cover;padding-top:550px;">
    <c:if test="${sessionScope.user == null}">
      <c:redirect url="http://localhost:8200/"></c:redirect>
    </c:if>

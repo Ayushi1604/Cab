@@ -9,5 +9,5 @@ public interface VehicleRepository extends JpaRepository<VehicleBean,String>{
 
 	//VehicleBean find(String vehicleNumber);
 	List<VehicleBean> findByVehicleNameAndVehicleType(String name, String type);
-
+	boolean existsByVehicleNumber(String vehicleNumber);
 }

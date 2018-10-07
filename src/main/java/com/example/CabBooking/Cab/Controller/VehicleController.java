@@ -46,7 +46,7 @@ public ModelAndView vehicleMain(ModelMap model, @Valid VehicleBean vehicle,Bindi
 			return mav;
 	    }
 		vehicleService.AddVehicle(vehicle);
-		ModelAndView mav = new ModelAndView("Admin");
+		ModelAndView mav=new ModelAndView("redirect:/getAllVehicles");
 		 mav.addObject("message", "Vehicle's Details Successfully Added");
 			return mav;
 			

@@ -13,7 +13,7 @@
 <title>Admin home page</title>
 
 </head>
-<body>
+<body style="background-image:url('resources/Image/background.jpg');background-repeat:no-repeat;background-position:center;background-size:cover;padding-top:540px;">
       <c:if test="${user != 'admin@123'}">
        <c:redirect url="http://localhost:8200/"></c:redirect>
      </c:if>

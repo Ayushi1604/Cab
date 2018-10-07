@@ -54,11 +54,9 @@
 	  
 	  <spring:bind path="userType">
 	    <div class="form-group">
-	    <form:select path="userType" class="form-control" placeholder="User Type" required="required">
-	    <option> Regular </option>
-	    <option> Prime </option>
-	    <option> Silver </option>
-	    </form:select>
+	    <form:radiobutton path="userType"  value="Regular"/>Regular &nbsp;&nbsp;&nbsp;&nbsp;
+	   <form:radiobutton path="userType"   value="Prime"/>Prime &nbsp;&nbsp;&nbsp;&nbsp;
+	   <form:radiobutton path="userType"   value="Silver"/>Silver
 	    <form:errors path="userType" cssClass="text-warning"></form:errors>
 	   </div>
 	  </spring:bind> 

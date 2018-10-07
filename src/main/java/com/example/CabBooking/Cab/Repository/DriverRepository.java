@@ -6,4 +6,5 @@ import com.example.CabBooking.Cab.Bean.DriverBean;
 
 public interface DriverRepository extends JpaRepository<DriverBean,String>{
     DriverBean findByVehicleNumber(String vehicleNumber);
+    boolean existsByVehicleNumber(String vehicleNumber);
 }

@@ -23,7 +23,6 @@
 <table class="table table-striped">
 <thead>
 <tr>
-<th>Driver Id</th>
 <th>Driver Name</th>
 <th>Vehicle Number</th>
 <th>Contact Number</th>
@@ -34,7 +33,7 @@
 
 <c:forEach items="${message}" var = "driver">
 <tr>
-<td>${driver.driverId}</td>
+
 <td>${driver.driverName}</td>
 <td>${driver.vehicleNumber}</td>
 <td>${driver.driverContactNumber}</td>

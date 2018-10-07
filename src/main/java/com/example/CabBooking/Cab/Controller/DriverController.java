@@ -17,13 +17,17 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.example.CabBooking.Cab.Bean.DriverBean;
 import com.example.CabBooking.Cab.Repository.DriverRepository;
+import com.example.CabBooking.Cab.Repository.VehicleRepository;
 import com.example.CabBooking.Cab.service.DriverService;
 
 @RestController
 public class DriverController {
 	
 	@Autowired  
-    private DriverService driverService;   
+    private DriverService driverService;  
+	
+	@Autowired
+	private VehicleRepository repo;
 	
 	@Autowired
 	DriverRepository repository;
@@ -35,13 +39,19 @@ public class DriverController {
 		}
 	@RequestMapping(value="/driverMain" ,method=RequestMethod.POST)
 	   public ModelAndView driverMain(@RequestParam Map<String ,String> map){
-		ModelAndView mav = new ModelAndView("Admin");
-          DriverBean driver = new DriverBean();
-          driver.setDriverId(map.get("driverId"));
-          driver.setVehicleNumber(map.get("vehicleNumber"));
-          driver.setDriverName(map.get("driverName"));
-          driver.setDriverContactNumber(map.get("driverContactNumber"));
-          driverService.addDriver(driver);
+		
+        if((repo.existsById(map.get("vehicleNumber")) &&(!repository.existsByVehicleNumber(map.get("vehicleNumber")))) ){
+        	ModelAndView mav = new ModelAndView("redirect:/getAllDrivers");
+            DriverBean driver = new DriverBean();
+            driver.setDriverId(map.get("driverId"));
+            driver.setVehicleNumber(map.get("vehicleNumber"));
+            driver.setDriverName(map.get("driverName"));
+            driver.setDriverContactNumber(map.get("driverContactNumber"));
+            driverService.addDriver(driver);
+            return mav;
+        }
+        ModelAndView mav = new ModelAndView("AddDriver");
+        mav.addObject("message", "Invalid");
 		return mav;
 	}
 		

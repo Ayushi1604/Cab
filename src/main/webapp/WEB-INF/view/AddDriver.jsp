@@ -20,11 +20,13 @@
      </c:if>
 	   <%@include file="navadmin.jsp" %>
       <br><br><br>
+      <c:set var = "i" scope = "session" value = "${20}"/>
 	<div class="container">
 	 <div class="col-md-4" >
 	<h2 >Add Driver</h2>
 	<form  action="driverMain" METHOD="POST" >
-	<div class="form-group"><input type="text" name=vehicleNumber class="form-control" placeholder="Vehicle Number" autofocus></div>
+	<div class="form-group"><input type="text" name=driverId class="form-control" placeholder="Driver Id"></div>
+	<div class="form-group"><input type="text" name=vehicleNumber class="form-control" placeholder="Vehicle Number" autofocus><span>${message} </span></div>
 	<div class="form-group"><input type="text" name=driverName class="form-control " Placeholder="Driver Name" ></div>
 	<div class="form-group"><input type="text" name=driverContactNumber class="form-control" placeholder="Phone Number"></div>
 	

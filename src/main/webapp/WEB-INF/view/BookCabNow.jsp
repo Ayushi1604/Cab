@@ -40,6 +40,7 @@ ArrayList<String> destinations =  sourceDestination.get(1);
 %></select>
 </td>
 </tr>
+<br><br>
 <tr><td>Destination</td>
 <td><select name="destination">
 	<%	for (Iterator iterator=destinations.iterator(); iterator.hasNext();){
